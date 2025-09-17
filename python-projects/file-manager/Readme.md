@@ -31,22 +31,28 @@ file-manager/
 ```bash
 git clone https://github.com/Suryansh2512/dev-portfolio.git
 cd dev-portfolio/python-projects/file-manager
-
-2. (Optional) Create a virtual environment
+```
+### 2. (Optional) Create a virtual environment
+```bash
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
+```
 
-3. Install dependencies
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-4. Run the project
+### 4. Run the project
+```bash
 python file_manager.py
+```
 
+## 📸SCREENSHOT
+<img width="1360" height="592" alt="image" src="https://github.com/user-attachments/assets/6b87e4b1-19e5-4ecc-a9e7-a7672b5b36e3" />
 
-## SCREENSHOTS
-
-⚠️ Notes
+## ⚠️ Notes
 
 Deleting is permanent — there’s no recycle bin.
 
@@ -54,7 +60,7 @@ Some operations (like modifying system files) may require administrator/root per
 
 Tested on Python 3.9+ (should work fine on 3.7+).
 
-🛠️ Roadmap / Future Improvements
+## 🛠️ Roadmap / Future Improvements
 
 ⬜ Multi-file selection
 
@@ -66,21 +72,7 @@ Tested on Python 3.9+ (should work fine on 3.7+).
 
 ⬜ Improved GUI (dark mode, theming)
 
-🤝 Contributing
+## 📜 License
 
-Pull requests are welcome!
-
-Fork the repo
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📜 License
-
-Distributed under the MIT License. 
+Distributed under the MIT License.
 

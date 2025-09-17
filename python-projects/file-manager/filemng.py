@@ -1,4 +1,5 @@
 import os
+import shutil
 
 def filemngr():
     while True:
@@ -7,7 +8,10 @@ def filemngr():
         print("2. List Files")
         print("3. Create Directory")
         print("4. Remove Directory")
-        print("5. Exit")
+        print("5. Copy File")
+        print("6. Move File")
+        print("7. Rename File/Directory")
+        print("8. Exit")
         try:
             todo = int(input("Enter your selection: ").strip())
         except ValueError:
@@ -42,6 +46,30 @@ def filemngr():
             except Exception as e:
                 print(f"Error: {e}")
         elif todo == 5:
+            src = input("Enter source file path to copy: ").strip()
+            dst = input("Enter destination path: ").strip()
+            try:
+                shutil.copy2(src, dst)
+                print(f"Copied '{src}' to '{dst}'.")
+            except Exception as e:
+                print(f"Error: {e}")
+        elif todo == 6:
+            src = input("Enter source file path to move: ").strip()
+            dst = input("Enter destination path: ").strip()
+            try:
+                shutil.move(src, dst)
+                print(f"Moved '{src}' to '{dst}'.")
+            except Exception as e:
+                print(f"Error: {e}")
+        elif todo == 7:
+            src = input("Enter file/directory to rename: ").strip()
+            dst = input("Enter new name: ").strip()
+            try:
+                os.rename(src, dst)
+                print(f"Renamed '{src}' to '{dst}'.")
+            except Exception as e:
+                print(f"Error: {e}")
+        elif todo == 8:
             print("Exiting File Manager.")
             break
         else:
